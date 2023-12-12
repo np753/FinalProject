@@ -1,0 +1,125 @@
+<!-- DEVELOPER: Niurka Puma, IS117-005, Fall 2023 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="../css/main.css" rel="stylesheet">
+	 <!-- script code for SlickNav plugin from textbook figure 8-12 -->
+	<link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#nav_menu').slicknav({prependTo: "#mobile_menu"})
+        });
+    </script>
+</head>
+
+<body>
+
+<div class="container-fluid p-3 text-white text-center">
+    <h1><a class="navbar-brand" href="../index.html">Contact Me</a></h1>
+    <h3>Any feedback or comment is welcome</h3>
+</div>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="../index.html" role="button" data-bs-toggle="dropdown">Niurka</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../Tier%202/Bio.html">Bio</a></li>
+                        <li><a class="dropdown-item" href="../Tier%202/AboutMe.html">About</a></li>
+                    </ul>
+                </li>
+               <li class="nav-item">
+                    <a class="nav-link" href="./Distance.html">Close to NJIT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Quick.html">Quick Bites</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Three.html">Big Three</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container mt-3 rounded">
+    <div class="row">
+        <form id="contact-form" method="post" action="contact.php" role="form">
+
+            <div class="controls">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="form_name">First Name: </label>
+                            <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your first name" required="required" data-error="Firstname is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="form_lastname">Last Name: </label>
+                            <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your last name" required="required" data-error="Lastname is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="form_email">Email: </label>
+                            <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email" required="required" data-error="Valid email is required.">
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="form_message">Message: </label>
+                            <textarea id="form_message" name="message" class="form-control" placeholder="Type your message" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 button">
+                        <input type="submit" class="btn btn-success btn-send" value="Send message">
+                    </div>
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+</div>
+<div class="container mt-5">
+
+    <footer class="footer page-footer font-small ">
+        <div class="container foot">
+            <div class="footer-con">
+                <span class="text-muted">&copy; Niurka Puma, 2023|  Terms Of Use  |  Privacy Statement</span>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+
+</body>
+
+
+</html>
